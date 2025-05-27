@@ -1,0 +1,14 @@
+/* ========================================= Global ========================================= */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================= App principal ========================================= */
+.app {
+  background-color: salmon;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
