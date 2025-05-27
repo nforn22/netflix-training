@@ -1,14 +1,77 @@
-/* ========================================= Global ========================================= */ 
+/* =========================================  Global  ========================================= */ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========================================= App principal ========================================= */
+/* =========================================  App principal  ========================================= */
 .app {
   background-color: salmon;
   min-height: 100vh;
   color: white;
   font-family: 'Arial', sans-serif;
+}
+
+/* ==========  Header  ========== */
+.header {
+  padding: 1rem;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ==========  Main  ========== */
+.main {
+  padding-bottom: 2rem;
+}
+
+/* ==========  Section  ========== */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.section-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+}
+
+.section-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Edge */
+}
+
+.section-content {
+  display: flex;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+/* ==========  Movie cards  ========== */
+.movie-card {
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  width: 12rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 6px;
 }
